@@ -17,4 +17,27 @@ function startStop() {
         isRunning = true;
     }
 }
+    function lapReset() {
+        if (isRunning) {
+            const lapTime = Date.now() - lapStartTime;
+            lapStartTime = Date.now();
+            const lapDisplay = formatTime(lapTime);
+            const lapItem = document.createElement("p");
+            lapItem.textContent = lapDisplay;
+            document.getElementById("laps").appendChild(lapItem);
+        } else {
+            clearInterval(interval);
+            document.getElementById("display").textContent = "0:00.0";
+            document.getElementById("startStop").textContent = "Start";
+            document.getElementById("lapReset").textContent = "Lap";
+            isRunning = false;
+            startTime = 0;
+            lapStartTime = 0;
+            document.getElementById("laps").innerHTML = "";
+        }
+    }
+    function updateDisplay() {
+        const currentTime = Date.now() - startTime;
+        document.getElementById("display").textContent = formatTime(currentTime);
+    }
 
