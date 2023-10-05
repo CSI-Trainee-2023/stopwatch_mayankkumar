@@ -37,7 +37,13 @@ function startStop() {
         }
     }
     function updateDisplay() {
-        const currentTime = Date.now() - startTime;
-        document.getElementById("display").textContent = formatTime(currentTime);
-    }
+            const currentTime = Date.now() - startTime;
+            document.getElementById("display").textContent = formatTime(currentTime);
+        }
 
+        function formatTime(milliseconds) {
+            const minutes = Math.floor(milliseconds / 60000);
+            const seconds = Math.floor((milliseconds % 60000) / 1000);
+            const tenths = Math.floor((milliseconds % 1000) / 100);
+            return `${minutes}:${(seconds < 10 ? "0" : "")}${seconds}.${tenths}`;
+        }
