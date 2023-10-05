@@ -1,30 +1,29 @@
-/*setting padding and margin of the whole  web page to zero*/
-body{
-    padding: 0;
-    margin: 0;
-    overflow-x: none;
+
+h1{
+    text-align: center;
+    font-size: 40;
+    font-style: italic;
 }
-/*setting width and height of the container */
-.container{
-    height: 100vh;
-    width: 100vw;
-    background-color: #a99b95;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/*setting height and width of the stopwatch container and */
 .stopwatch{
-    height: 40vh;
-    width: 60vw;
-    border: solid black 3px;
-    background-color: rgb(174, 174, 149);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: rgb(142, 174, 202);
+    height: 50vh;
 }
-.timeline{
-
+    
+#display{
+    font-size: 40px;
+    text-align: center;
 }
 
-
+#startStop{
+    font-size: x-large;
+    border-radius: 50%;
+    background-color: rgb(134, 52, 52);
+    margin-left: 565px;
+    border: solid;
+}
+#lapReset{
+    font-size: x-large;
+    border-radius: 50%;
+    background-color: rgb(134, 52, 52);
+    border: solid;
+}
