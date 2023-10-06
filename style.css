@@ -1,19 +1,21 @@
-
-h1{
+/* align heading in the center nad adjusting font size and font style*/
+.header{
     text-align: center;
     font-size: 40;
     font-style: italic;
 }
+/*setting background color and defining height and width of the view port*/
 .stopwatch{
     background-color: rgb(142, 174, 202);
     height: 100vh;
+    padding-top: 10px;
 }
-    
+/*setting font size and alignment of the display*/  
 #display{
     font-size: 40px;
     text-align: center;
 }
-
+/* layout of the start stop button */
 #startStop{
     font-size: x-large;
     border-radius: 50%;
@@ -21,6 +23,7 @@ h1{
     margin-left: 562px;
     border: solid;
 }
+/* layout of the lap reset button */
 #lapReset{
     font-size: x-large;
     border-radius: 50%;
