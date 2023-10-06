@@ -47,3 +47,8 @@ function startStop() {
             const tenths = Math.floor((milliseconds % 1000) / 100);
             return `${minutes}:${(seconds < 10 ? "0" : "")}${seconds}.${tenths}`;
         }
+ document.addEventListener("keydown", e => { if (e.ctrlKey && e.key.toLowerCase() === "s") { startStop() } });
+document.addEventListener("keydown", e => { if (e.ctrlKey && e.key.toLowerCase() === "x") { startStop() } });
+document.addEventListener("keydown", e => { if (e.ctrlKey && e.key.toLowerCase() === "r") { lapReset() } });
+document.addEventListener("keydown", e => { if (e.ctrlKey && e.key.toLowerCase() === "l") { lapReset() } });
+document.addEventListener("keydown", e => { if (e.ctrlKey && e.key.toLowerCase() === "p") { startStop() } });

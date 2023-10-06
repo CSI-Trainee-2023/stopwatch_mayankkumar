@@ -30,3 +30,9 @@
     background-color: rgb(134, 52, 52);
     border: solid;
 }
+/*making lap section to the center*/
+#laps{
+   margin-left: 570px;
+   font-size: 20px;
+   font-weight: bolder;
+}
